@@ -7,6 +7,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
+  color: #555;
 }
 h1 {
   margin-bottom: 0.5em;
@@ -23,6 +24,7 @@ p {
   padding: 8px 25px;
   border-radius: 4px;
 }
+
 .button-primary {
   position: relative;
   background-color: #c0ca33;
@@ -76,6 +78,23 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.footer-area {
+  position: relative;
+  height: 10vh;
+  background: #5bc0de;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#thinnerfooter {
+    color: white;
+    text-align: center;
+    height: 3vh;
+}
+
 .banner {
   display: flex;
   align-items: center;
@@ -100,10 +119,7 @@ p {
   transition: background 0.6s ease-in;
   z-index: 99999;
 }
-.navbar .navbar-brand {
-  font-family: 'Lobster', cursive;
-  font-size: 2.5rem;
-}
+
 .navbar .navbar-toggler {
   position: relative;
   height: 50px;
@@ -203,8 +219,22 @@ p {
   background-color: #c0ca33;
 }
 .content {
-  padding: 120px 0;
+  padding: 10px 0;
 }
+
+#testimonials {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.aboutbundy {
+    padding-top: 20px;
+}
+
+.mainabout {
+    background-color: #5bc0de;
+}
+
 @media screen and (max-width: 768px) {
   .navbar-brand {
     margin-left: 20px;
@@ -257,6 +287,7 @@ p {
     transform-origin: top;
   }
 }
+
 @-webkit-keyframes navbar-animation {
   0% {
     opacity: 0;
