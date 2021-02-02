@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<title>Sutton Electrical Services</title>
+</head>
+
+<body>
+
+<div class="container">
+  <form action="action_page.php">
+
+    <label for="fname">Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Name">
+
+    <label for="lname">Email</label>
+    <input type="text" id="lname" name="lastname" placeholder="Email">
+
+    <label for="lname">Phone</label>
+    <input type="text" id="phone" name="phone" placeholder="Phone">
+
+    <label for="enquirytype">Enquiry type</label>
+    <select id="enquirytype" name="enquirytype">
+        <option disabled selected value> -- select an option -- </option>
+        <option value="australia">Domestic</option>
+        <option value="canada">Commercial</option>
+        <option value="usa">General</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Send">
+
+  </form>
+</div>
+
+</body>
