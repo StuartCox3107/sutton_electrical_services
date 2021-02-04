@@ -14,32 +14,130 @@
 
 <body>
 
-<div class="container">
-  <form action="action_page.php">
+<header class="header-area overlay">
+    <nav class="navbar navbar-expand-md navbar-dark">
+		<div class="container">			
+			<button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#main-nav">
+				<span class="menu-icon-bar"></span>
+				<span class="menu-icon-bar"></span>
+				<span class="menu-icon-bar"></span>
+			</button>
+			
+			<div id="main-nav" class="collapse navbar-collapse">
+				<ul class="navbar-nav">
+					<li><a href="index.html" class="nav-item nav-link active"><i class="fas fa-home"></i></a></li>
+					<li><a href="index.html#aboutus" class="nav-item nav-link">About Us</a></li>
+					<li class="dropdown">
+						<a href="services.html" class="nav-item nav-link" data-toggle="dropdown">Services</a>
+						<div class="dropdown-menu">
+							<a href="services.html" class="dropdown-item">Domestic services</a>
+							<a href="services.html" class="dropdown-item">Corporate services</a>
+							<a href="services.html" class="dropdown-item">General services</a>
+						</div>
+					</li>
+					<li class="dropdown">
+						<a href="portfolio.html" class="nav-item nav-link" data-toggle="dropdown">Portfolio</a>
+						<div class="dropdown-menu">
+							<a href="portfolio.html" class="dropdown-item">Bundys job I did 1</a>
+							<a href="portfolio.html" class="dropdown-item">Bundys job I did 2</a>
+							<a href="portfolio.html" class="dropdown-item">Bundys job I did 3</a>
+						</div>
+					</li>
+					<li><a href="contact.html" class="nav-item nav-link">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	
+	<div class="banner">
+		<div class="container">
+			<h1 id="company-name">Sutton Electrical Services</h1>
+			<p>Serving you better, everyday</p>
+		</div>
+	</div>
+</header>
 
-    <label for="fname">Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Name">
+<div class="fcf-body">
 
-    <label for="lname">Email</label>
-    <input type="text" id="lname" name="lastname" placeholder="Email">
+    <div id="fcf-form">
+    <h1>Contact us</h1>
+    <hr>
+    <br>
+    <h2><i class="fas fa-phone"></i>  07734 9020900</h2>
+    <br>
+    <h2><i class="fas fa-envelope-open-text"></i>  alan@suttonelectricalservices.net</h2>
+    <br>
+    <hr>
+    <br>
+    <h2>Or fill in the form below</h2>
+    <br>
 
-    <label for="lname">Phone</label>
-    <input type="text" id="phone" name="phone" placeholder="Phone">
+    <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+        
+        <div class="fcf-form-group">
+            <label for="Name" class="fcf-label">Name *</label>
+            <div class="fcf-input-group">
+                <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+            </div>
+        </div>
 
-    <label for="enquirytype">Enquiry type</label>
-    <select id="enquirytype" name="enquirytype">
-        <option disabled selected value> -- select an option -- </option>
-        <option value="australia">Domestic</option>
-        <option value="canada">Commercial</option>
-        <option value="usa">General</option>
-    </select>
+        <div class="fcf-form-group">
+            <label for="Email" class="fcf-label">Email *</label>
+            <div class="fcf-input-group">
+                <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+            </div>
+        </div>
 
-    <label for="subject">Subject</label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        <div class="fcf-form-group">
+            <label for="Phone" class="fcf-label">Phone</label>
+            <div class="fcf-input-group">
+                <input type="text" id="Phone" name="Phone" class="fcf-form-control">
+            </div>
+        </div>
 
-    <input type="submit" value="Send">
+        <div class="fcf-form-group">
+            <label for="Message" class="fcf-label">Message *</label>
+            <div class="fcf-input-group">
+                <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+            </div>
+        </div>
+        <div><small>* Required</small></div>
+        <div class="fcf-form-group">
+            <button type="submit" id="fcf-button" class="button button-primary">Send Message</button>
+        </div>
+    </form>
+    </div>
 
-  </form>
 </div>
+<footer class="footer-area overlay" id="footer">
+    <nav class="navbar navbar-expand-md navbar-dark">
+		<div class="container">	
+            			
+			<div class="collapse navbar-collapse">
+				<ul class="navbar-nav">
+					<li><a href="index.html" class="nav-item nav-link active"><i class="fas fa-home"></i></a></li>
+					<li><a href="index.html#aboutus" class="nav-item nav-link">About Us</a></li>
+					<li class="dropdown">
+						<a href="services.html" class="nav-item nav-link">Services</a>
+					</li>
+					<li>
+						<a href="portfolio.html" class="nav-item nav-link">Portfolio</a>
+					</li>
+                    <li><a href="contact.html" class="nav-item nav-link">Contact</a></li>
+                </ul>
+                <div class ="facebook-div">
+                <a id="facebook-icon" href="https://www.facebook.com/SuttonElectricalServices/" class="nav-item nav-link" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                </div>
+			</div>
+		</div>
+    </nav>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+</footer>
+
+<script src="scripts/scripts.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </body>
+</html>

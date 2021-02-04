@@ -377,11 +377,7 @@ Possible for a user to enter a harvest date being prior to the planting date. Th
 
 ## Credits & acknowledgements
 
-- [Simen Daehlin](https://github.com/Eventyret) - [The Padwan Project](https://github.com/Eventyret/Padawan) for boilerplate template
-- Mentor Rohit Sharma for his advice and wisdom, particularly in terms of the scope of the project
-- Richard Wells_lead for the README.md cloning from Github section
-- CI coursework videos for the search functionality
-- [w3schools](https://www.w3schools.com/) was used extensively to research and assist with many challenges 
+- Contact from from [Freecontactform.com]("https://www.freecontactform.com")
 
 ### [Top of page](#iGrow)
 ---
