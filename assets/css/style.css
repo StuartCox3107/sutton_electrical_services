@@ -23,7 +23,7 @@ p {
   display: inline-block;
   margin-top: 20px;
   padding: 8px 25px;
-  border-radius: 4px;
+  border-radius: 5px;
 }
 
 .button-primary {
@@ -65,7 +65,7 @@ p {
 /* Styling for top banner */
 .header-area {
   position: relative;
-  height: 65vh;
+  height: 45vh;
   background: #789B93;
   background-attachment: fixed;
   background-position: center center;
@@ -85,6 +85,23 @@ p {
 .cvlist {
     padding-top: 10px;
 }
+
+/* Styling for contactus page */
+
+.contactlink {
+    color: white;
+}
+
+.contactlink:hover {
+    color: #c0ca33;
+    text-decoration: none;
+}
+
+/* carousel images */
+
+.carousel-item {
+    max-height: 300px;
+} 
 
 /* Styling for footer */
 
@@ -315,6 +332,10 @@ textarea.fcf-form-control {
 label.fcf-label {
     display: inline-block;
     margin-bottom: 0.8rem;
+}
+
+#fcf-button {
+    border-style: none;
 }
 
 

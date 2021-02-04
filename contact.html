@@ -14,48 +14,60 @@
 
 <body>
 
-<header class="header-area overlay">
-    <nav class="navbar navbar-expand-md navbar-dark">
-		<div class="container">			
-			<button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#main-nav">
-				<span class="menu-icon-bar"></span>
-				<span class="menu-icon-bar"></span>
-				<span class="menu-icon-bar"></span>
-			</button>
-			
-			<div id="main-nav" class="collapse navbar-collapse">
-				<ul class="navbar-nav">
-					<li><a href="index.html" class="nav-item nav-link active"><i class="fas fa-home"></i></a></li>
-					<li><a href="index.html#aboutus" class="nav-item nav-link">About Us</a></li>
-					<li class="dropdown">
-						<a href="services.html" class="nav-item nav-link" data-toggle="dropdown">Services</a>
-						<div class="dropdown-menu">
-							<a href="services.html" class="dropdown-item">Domestic services</a>
-							<a href="services.html" class="dropdown-item">Corporate services</a>
-							<a href="services.html" class="dropdown-item">General services</a>
-						</div>
-					</li>
-					<li class="dropdown">
-						<a href="portfolio.html" class="nav-item nav-link" data-toggle="dropdown">Portfolio</a>
-						<div class="dropdown-menu">
-							<a href="portfolio.html" class="dropdown-item">Bundys job I did 1</a>
-							<a href="portfolio.html" class="dropdown-item">Bundys job I did 2</a>
-							<a href="portfolio.html" class="dropdown-item">Bundys job I did 3</a>
-						</div>
-					</li>
-					<li><a href="contact.html" class="nav-item nav-link">Contact</a></li>
-				</ul>
-			</div>
-		</div>
-	</nav>
-	
-	<div class="banner">
-		<div class="container">
-			<h1 id="company-name">Sutton Electrical Services</h1>
-			<p>Serving you better, everyday</p>
-		</div>
-	</div>
-</header>
+<header class="header-area">
+            <nav class="navbar navbar-expand-md navbar-dark">
+                <div class="container">
+                    <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#main-nav">
+                        <span class="menu-icon-bar"></span>
+                        <span class="menu-icon-bar"></span>
+                        <span class="menu-icon-bar"></span>
+                    </button>
+
+                    <div id="main-nav" class="collapse navbar-collapse">
+                        <ul class="navbar-nav">
+                            <li>
+                                <a href="index.html" class="nav-item nav-link active">
+                                    <i class="fas fa-home"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#aboutus" class="nav-item nav-link">About Us</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="services.html" class="nav-item nav-link" data-toggle="dropdown">Services</a>
+                                <div class="dropdown-menu">
+                                    <a href="services.html#domesticservices" class="dropdown-item">Domestic services</a>
+                                    <a href="services.html#corporateservices" class="dropdown-item">Corporate services</a>
+                                    <a href="services.html#generalservices" class="dropdown-item">General services</a>
+                                </div>
+                            </li>
+                            <li class="dropdown">
+                                <a href="portfolio.html" class="nav-item nav-link" data-toggle="dropdown">Portfolio</a>
+                                <div class="dropdown-menu">
+                                    <a href="portfolio.html" class="dropdown-item">Bundys job I did 1</a>
+                                    <a href="portfolio.html" class="dropdown-item">Bundys job I did 2</a>
+                                    <a href="portfolio.html" class="dropdown-item">Bundys job I did 3</a>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="contact.html" class="nav-item nav-link">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="logo">
+                <img class="rounded mx-auto d-block logo" src="assets/images/bundylogo.jpg" width="300">
+            </div>
+
+            <div class="company-header">
+                <div class="container">
+                    <h1 id="company-name">Sutton Electrical Services</h1>
+                    <p>Serving you better, everyday</p>
+                </div>
+            </div>
+        </header>
 
 <div class="fcf-body">
 
@@ -65,7 +77,8 @@
     <br>
     <h2>Call</h2>
     <br>
-    <h2 class="btn button-primary"><i class="fas fa-phone"></i>  <a href="tel: 07734-9020900">07734-9020900</h2></a>
+    <h2 class="btn button-primary contactlink"><i class="fas fa-phone"></i>  <a class="contactlink" href="tel: 07734-9020900">07734-9020900</h2></a>
+    <br>
     <br>
     <h2>Email</h2>
     <br>
@@ -113,7 +126,7 @@
     </div>
 
 </div>
-<footer class="footer-area overlay" id="footer">
+<footer class="footer-area" id="footer">
     <nav class="navbar navbar-expand-md navbar-dark">
 		<div class="container">	
             			
