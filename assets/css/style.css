@@ -73,10 +73,16 @@ p {
   background-size: cover;
 }
 
+/* Styling for logo */
 .logo {
     padding-top: 30px;
 }
 
+.animate__backInDown {
+    border-radius: 15px !important;
+}
+
+/* Coronavirus notice */
 .cvnotice {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -97,11 +103,15 @@ p {
     text-decoration: none;
 }
 
-/* carousel images */
+/* carousel for portfolio */
 
 .carousel-item {
     max-height: 300px;
-} 
+}
+
+.down20px {
+    padding-top: 20px;
+}
 
 /* Styling for footer */
 
