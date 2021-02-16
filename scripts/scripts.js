@@ -51,3 +51,23 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+// Copy to clipboard on contact us page
+function copyToClipboard(element) {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($(element).html()).select();
+  var str = $(element).html();
+
+  function listener(e) {
+         e.clipboardData.setData("text/html", str);
+         e.clipboardData.setData("text/plain", str);
+         e.preventDefault();
+  }
+  document.addEventListener("copy", listener);
+  document.execCommand("copy");
+  document.removeEventListener("copy", listener);
+
+  $temp.remove();
+  $("#success").slideDown("slow");
+}
