@@ -66,7 +66,7 @@ function copyToClipboard(element) {
   }
   document.addEventListener("copy", listener);
   document.execCommand("copy");
-  document.removeEventListener("copy", listener);
+  document.removeEventListener("copy", listener);   
 
   $temp.remove();
   $("#success").slideDown("slow");
