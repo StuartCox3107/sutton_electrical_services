@@ -569,6 +569,10 @@ label.fcf-label {
   margin:0
 }
 
+.footertitle {
+    padding-bottom: 10px;;
+}
+
 @media (max-width:991px)
 {
   .site-footer [class^=col-]
