@@ -4,11 +4,68 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name="Description" content="Enter your description here"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 <link rel="stylesheet" href="assets/css/style.css">
+<script>
+function submitToAPI(e) {
+       e.preventDefault();
+       var URL = "https://xpmmxyqsv2.execute-api.us-east-1.amazonaws.com/live";
+
+            var Namere = /[A-Za-z]{1}[A-Za-z]/;
+            if (!Namere.test($("#Name").val())) {
+                         alert ("Name can not less than 2 char");
+                return;
+            }
+            var mobilere = /[0-9]{10}/;
+            if (!mobilere.test($("#Phone").val())) {
+                alert ("Please enter valid mobile number");
+                return;
+            }
+            if ($("#Email").val()=="") {
+                alert ("Please enter your email id");
+                return;
+            }
+
+            var reeamil = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,6})?$/;
+            if (!reeamil.test($("#Email").val())) {
+                alert ("Please enter valid email address");
+                return;
+            }
+
+       var name = $("#Name").val();
+       var phone = $("#Phone").val();
+       var email = $("#Email").val();
+       var desc = $("#Message").val();
+       var data = {
+          name : name,
+          phone : phone,
+          email : email,
+          message : message
+        };
+
+       $.ajax({
+         type: "POST",
+         url : "https://xpmmxyqsv2.execute-api.us-east-1.amazonaws.com/live",
+         dataType: "json",
+         crossDomain: "true",
+         contentType: "application/json; charset=utf-8",
+         data: JSON.stringify(data),
+
+         
+         success: function () {
+           // clear form and show a success message
+           alert("Successfull");
+           document.getElementById("contact-form").reset();
+       location.reload();
+         },
+         error: function () {
+           // show an error message
+           alert("UnSuccessfull");
+         }});
+     }
+     </script>
 <title>Sutton Electrical Services</title>
 </head>
 
