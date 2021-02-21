@@ -71,3 +71,29 @@ function copyToClipboard(element) {
   $temp.remove();
   $("#success").slideDown("slow");
 }
+
+// kids page js
+
+$("#redbtn").click(function(){
+  $("body").css("color", "red");
+  $(".header-area").css("background-color", "red");
+  $(".site-footer").css("background-color", "red");
+});
+
+$("#bluebtn").click(function(){
+  $("body").css("color", "blue");
+  $(".header-area").css("background-color", "blue");
+  $(".site-footer").css("background-color", "blue");
+});
+
+$("#greenbtn").click(function(){
+  $("body").css("color", "green");
+  $(".header-area").css("background-color", "green");
+  $(".site-footer").css("background-color", "green");
+});
+
+$("#orangebtn").click(function(){
+  $("body").css("color", "orange");
+  $(".header-area").css("background-color", "orange");
+  $(".site-footer").css("background-color", "orange");
+});

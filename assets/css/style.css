@@ -573,6 +573,37 @@ label.fcf-label {
     padding-bottom: 10px;;
 }
 
+/* Kids page */
+
+#redbtn {
+    background-color: red;
+    color: white;
+}
+
+#bluebtn {
+    background-color: blue;
+    color: white;
+}
+
+#greenbtn {
+    background-color: green;
+    color: white;
+}
+
+#orangebtn {
+    background-color: orange;
+    color: white;
+}
+
+.colourbtn {
+    width: 100px;
+}
+
+.kidsheader {
+    padding-top: 60px;
+    text-align: center;
+}
+
 @media (max-width:991px)
 {
   .site-footer [class^=col-]
