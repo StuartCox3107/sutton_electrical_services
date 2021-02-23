@@ -74,26 +74,31 @@ function copyToClipboard(element) {
 
 // kids page js
 
-$("#redbtn").click(function(){
+$("#redbtn, #redbtn2").click(function(){
   $("body").css("color", "red");
   $(".header-area").css("background-color", "red");
   $(".site-footer").css("background-color", "red");
+  $(".btn").css("background-color", "red");
 });
 
-$("#bluebtn").click(function(){
+$("#bluebtn, #bluebtn2").click(function(){
   $("body").css("color", "blue");
   $(".header-area").css("background-color", "blue");
   $(".site-footer").css("background-color", "blue");
+  $(".btn").css("background-color", "blue");
 });
 
-$("#greenbtn").click(function(){
+$("#greenbtn, #greenbtn2").click(function(){
   $("body").css("color", "green");
   $(".header-area").css("background-color", "green");
   $(".site-footer").css("background-color", "green");
+  $(".btn").css("background-color", "green");
 });
 
-$("#orangebtn").click(function(){
+$("#orangebtn, #orangebtn2").click(function(){
   $("body").css("color", "orange");
   $(".header-area").css("background-color", "orange");
   $(".site-footer").css("background-color", "orange");
+  $(".btn").css("background-color", "orange");
 });
+
