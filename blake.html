@@ -50,7 +50,7 @@
         </div>
     </nav>
 
-    <div class="kidsheader wow animate__animated animate__hinge">
+    <div class="kidsheader wow animate__animated animate__rubberBand">
         <h1>
         This is Blakes website
         </h1>
@@ -249,7 +249,79 @@
 
 <!-- Quiz section -->
 <h1 class="text-center mt-3 wow animate__animated animate__swing" id="quiz">Blake's quiz</h1>
+  
+<div class="container d-flex justify-content-center">
+    <div class="row">
+        <div class="col">
+	<table>
+	<tr>
+	  <td>
+	  	<div>
+	  		<p class="question mx-5 mt-3 pt-3">1. What was the first Freddy Kruger film?</p>
 
+	    	<ul>
+	    	<input class="answer" type="radio" name="q1" value="1">
+	        <label id="correctString1">A Nightmare on Elm Street 1</label>
+	    	<br>
+	        <input class="answer" type="radio" name="q1" value="0">
+	        <label>Freddys Nightmare</label>
+	        <br>
+	        <input class="answer" type="radio" name="q1" value="0">
+	        <label>Friday the 13th</label>
+    		</ul>
+	  	</div>
+      </td>
+    </tr>
+    </table>
+</div>
+</div>
+</div>
+<br>
+<div class="container d-flex justify-content-center">
+    <div class="row">
+        <div class="col">
+    <table>
+    <tr>
+	  <td>
+	  	<div>
+	  		<p class="question mx-5 mt-3 pt-3">2. What was the first Horrid Henry movie?</p>
+
+	    	<ul>
+	        <input class="answer" type="radio" name="q2" value="0">
+	        <label>Horrid Henry's weekend</label>
+	        <br>
+	        <input class="answer" type="radio" name="q2" value="1">
+	        <label id="correctString2">Horrid Henry the movie</label>
+	        <br>
+	        <input class="answer" type="radio" name="q2" value="0">
+	        <label>Horrid Henry</label>
+	    	</ul>
+	  	</div>
+	  </td>
+	</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="container d-flex justify-content-center mt-5">
+    <div class="row">
+        <div class="col">
+            <div class="submitter">
+                    <input class="btn button-primary" id="submitButton" onClick="submitQuiz()"
+                    type="submit" value="Submit" />
+            </div>
+  
+            <!--show only wrong answers on submit-->
+            <div class="quizAnswers" id="correctAnswer1"></div>
+            <div class="quizAnswers" id="correctAnswer2"></div>
+
+            <!--show score upon submit-->
+            <div>
+                <h2 class="quizScore" id="userScore"></h2>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- Site footer -->
 <footer class="site-footer mt-3 text-center wow animate__animated animate__rotateIn">
